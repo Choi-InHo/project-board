@@ -7,8 +7,6 @@ import lombok.ToString;
 import javax.persistence.*;
 import java.util.Objects;
 
-
-
 @Getter
 @ToString
 @Table(indexes = {

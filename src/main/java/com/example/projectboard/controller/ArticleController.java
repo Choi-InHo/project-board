@@ -8,21 +8,23 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 import java.util.List;
 
-@Controller
 @RequestMapping("/articles")
+@Controller
 public class ArticleController {
 
     @GetMapping
-    public String articles(ModelMap map){
+    public String articles(ModelMap map) {
         map.addAttribute("articles", List.of());
+
         return "articles/index";
     }
 
-    @GetMapping("/{articleId}") // 단건 조
-    public String article(@PathVariable long articleId, ModelMap map){
-        map.addAttribute("article", "article"); //TODO:실제 데이터를 넣어주어야 함
+    @GetMapping("/{articleId}")
+    public String article(@PathVariable Long articleId, ModelMap map) {
+        map.addAttribute("article", "article"); // TODO: 구현할 때 여기에 실제 데이터를 넣어줘야 한다
         map.addAttribute("articleComments", List.of());
 
         return "articles/detail";
     }
+
 }
