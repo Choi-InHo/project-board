@@ -17,7 +17,7 @@ public record ArticleCommentResponse(
     public static ArticleCommentResponse of(Long id, String content, LocalDateTime createdAt, String email, String nickname, String userId) {
         return new ArticleCommentResponse(id, content, createdAt, email, nickname, userId);
     }
-
+    //이것은 깃크라켓을 위한 바꿈
     public static ArticleCommentResponse from(ArticleCommentDto dto) {
         String nickname = dto.userAccountDto().nickname();
         if (nickname == null || nickname.isBlank()) {
