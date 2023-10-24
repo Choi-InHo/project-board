@@ -1,17 +1,31 @@
-# project-board
-게시판 만들기 프로젝트를 진행 해보았다.
-
-spring boot와 jpa를 활용하여 게시글 댓글, 게시글, 로그인 페이지, 인증 기능을 구현 해봄으로 웹페이지에 대한 이해력을 높이고자
-프로젝트를 진행하였다.
-
-JpaRepository 
-
-thymeleaf
+가장 기본적이고 보편적인 게시판 기능을 둘러볼 수 있는 서비스입니다. 가장 최신의 스프링 부트와 관련 기술들, 자바 17 기능들, 개발 도구들을 경험할 수 있도록 만들어졌습니다. 어드민 프로젝트의 개발과 기능 사용은 이 프로젝트와 연관이 있습니다.
 
 
 
-spring Secutity(로그인, 로그아웃, 인증, 권한)
+개발 환경
 
+Intellij IDEA Ultimate 
+Java 17
+Gradle 7.4.1
+Spring Boot 2.7.16
+기술 세부 스택
 
-기술스택 :
-Spring boot, JPA, 헤로쿠
+Spring Boot
+
+Spring Boot Actuator
+Spring Web
+Spring Data JPA
+Rest Repositories
+Rest Repositories HAL Explorer
+Thymeleaf
+Spring Security
+H2 Database
+MySQL Driver
+Lombok
+Spring Boot DevTools
+Spring Configuration Processor
+그 외
+
+QueryDSL 5.0.0
+Bootstrap 5.2.0-Beta1
+Heroku
